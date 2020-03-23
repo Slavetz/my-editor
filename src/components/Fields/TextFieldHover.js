@@ -1,5 +1,5 @@
 import React from 'react'
-import MyEditor from './MyEditor'
+import MyEditor from '../DraftEditor/MyEditor'
 
 import {inject} from "mobx-react";
 @inject('BlocksStore')
@@ -22,8 +22,8 @@ export default class TextField extends React.Component {
         >
             {showEditor? <MyEditor
                 content={this.props.content}
-                onBlur={this.updateStore}
-                onChange={this.updateStore}
+                onBlur={this.updateField}
+                onChange={this.updateField}
             />:<div
                 dangerouslySetInnerHTML={{ __html: content }}
             /> }
@@ -45,7 +45,7 @@ export default class TextField extends React.Component {
     }
 
 
-    updateStore = (html) => {
+    updateField = (html) => {
         const {
             blockId,
             fieldIndex,
@@ -53,7 +53,7 @@ export default class TextField extends React.Component {
         } = this.props;
 
         if (this.props.content !== html) {
-            BlocksStore.fieldUpdate( blockId, fieldIndex, html )
+            BlocksStore.updateField( blockId, fieldIndex, html )
         }
     }
 

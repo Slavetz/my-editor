@@ -1,37 +1,51 @@
-import React from "react";
 import { TextField , TextFieldHover, ImageField } from '../Fields'
+//import ImageField from '../Fields/ImageField'
+import React from "react";
 
 export default class Block extends React.Component  {
 
     state = {
-        block: this.props.block
+        block: JSON.stringify(this.props.block)
     }
 
-
     shouldComponentUpdate(nextProps,nextState){
-        return this.state.block !== nextState.block;
+
+        const thisStateBlock = this.state.block
+        const thisPropsBlock = JSON.stringify(this.props.block)
+
+        // const nextStateBlock = nextState.block
+        // const nextPropsBlock = JSON.stringify(nextProps.block)
+        // console.log ('+++++++++++++++++++++++++++++')
+        // console.log ('thisStateBlock',thisStateBlock)
+        // console.log ('thisPropsBlock',thisPropsBlock)
+        // console.log ('nextStateBlock',nextStateBlock)
+        // console.log ('nextPropsBlock',nextPropsBlock)
+        // console.log ('-----------------------------')
+
+        if (thisStateBlock !== thisPropsBlock) {
+            return true
+        }
+        return false
+
     }
 
     static getDerivedStateFromProps(nextProps, prevState) {
         const prevStateBlock = prevState.block
-        const nextPropsBlock = nextProps.block
-        const block = JSON.parse(nextPropsBlock)
+        const nextPropsBlock = JSON.stringify(nextProps.block)
         if (prevStateBlock !== nextPropsBlock){
             return {
-                block: nextPropsBlock,
+                block: nextPropsBlock
             }
         }
         return null
     }
 
     render() {
-        const block = JSON.parse(this.state.block);
+        const {block} = this.props;
         console.log('render Block', block.id)
         const fields = block.fields
         return (
-            <div className={'editor-block'}>
-                <div>{block.lock ? 'LOCK': ''}</div>
-                {
+            <div className={'editor-block'}>{
                 fields.map((field,f) => {
                     if (field.type === 'TextField') {
                         return <TextField
@@ -39,7 +53,6 @@ export default class Block extends React.Component  {
                             content={field.content}
                             fieldIndex={f}
                             blockId={block.id}
-                            {...this.props}
                         />
                     }
                     if (field.type === 'TextFieldHover') {
@@ -48,7 +61,6 @@ export default class Block extends React.Component  {
                             content={field.content}
                             fieldIndex={f}
                             blockId={block.id}
-                            {...this.props}
                         />
                     }
                     if (field.type === 'ImageField') {
@@ -57,7 +69,6 @@ export default class Block extends React.Component  {
                             content={field.content}
                             fieldIndex={f}
                             blockId={block.id}
-                            {...this.props}
                         />
                     }
                     return null

@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d23a8377-68f7-4a9f-9a88-ee37a280e378" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Block/Block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Block/MyEditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Block/TextField.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Block/TextFieldHover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Block/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/Editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Editor/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RichEditor/RichEditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RichEditor/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/Blocks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/BlocksStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/index.js" afterDir="false" />
+    <list default="true" id="d23a8377-68f7-4a9f-9a88-ee37a280e378" name="Default Changelist" comment="init commit ;)">
+      <change afterPath="$PROJECT_DIR$/src/components/DraftEditor/RichEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DraftEditor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Fields/ImageField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Block/Block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Block/Block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Block/MyEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DraftEditor/MyEditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Block/TextField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Fields/TextField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Block/TextFieldHover.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Fields/TextFieldHover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Block/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Block/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/Editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BlockEditor/BlockEditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Editor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BlockEditor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RichEditor/RichEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Block/Block0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RichEditor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Fields/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/Blocks.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/Blocks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/BlocksStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/BlocksStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +65,10 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Fields" />
+      <recent name="$PROJECT_DIR$/src/components/RichEditor" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -113,34 +111,59 @@
       <option name="presentableId" value="Default" />
       <updated>1584821924730</updated>
       <workItem from="1584821926217" duration="15876000" />
-      <workItem from="1584871376472" duration="17462000" />
+      <workItem from="1584871376472" duration="17885000" />
+      <workItem from="1584901620998" duration="13876000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit ;)">
+      <created>1584901483883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584901483883</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit ;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit ;)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584900981134">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1584900981134" />
-    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1584838670301">
+    <state x="303" y="64" key="CommitChangelistDialog2" timestamp="1584908987273">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584838670301" />
-    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1584838670298">
+    <state x="303" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1584908987273" />
+    <state x="144" y="100" key="DiffContextDialog" timestamp="1584908985256">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584838670298" />
-    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1584838670296">
+    <state x="144" y="100" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1584908985256" />
+    <state width="1398" height="203" key="GridCell.Tab.0.bottom" timestamp="1584916831788">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584838670296" />
-    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1584838670300">
+    <state width="1398" height="203" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584916831788" />
+    <state width="1398" height="203" key="GridCell.Tab.0.center" timestamp="1584916831787">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584838670300" />
+    <state width="1398" height="203" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584916831787" />
+    <state width="1398" height="203" key="GridCell.Tab.0.left" timestamp="1584916831786">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="203" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584916831786" />
+    <state width="1398" height="203" key="GridCell.Tab.0.right" timestamp="1584916831787">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="203" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584916831787" />
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1584901622113">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1584901622113" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1584894144517">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

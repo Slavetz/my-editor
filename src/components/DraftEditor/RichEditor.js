@@ -1,15 +1,18 @@
 import React from 'react'
-import {Editor, EditorState} from 'draft-js';
+
+import Editor from 'draft-js-plugins-editor';
+import {EditorState} from 'draft-js';
+
 import {convertFromHTML, convertToHTML} from 'draft-convert'
 
-export default class MyEditor extends React.Component {
+export default class RichEditor extends React.Component {
 
     state = {
         editorState: EditorState.createWithContent(convertFromHTML(this.props.content)),
     }
 
     render() {
-        console.log('MyEditor render')
+        console.log('render RichEditor')
         return <Editor
             editorState={this.state.editorState}
             onChange={this.onChange}
@@ -37,5 +40,6 @@ export default class MyEditor extends React.Component {
     }
 
 }
+
 
 

@@ -1,6 +1,7 @@
 {
   "blocks": [
     { "id": 1,
+      "type": "TextBlock",
       "fields": [
         {
           "type":"TextField",
@@ -9,14 +10,16 @@
       ]
     },
     { "id": 2,
+      "type": "TextBlock",
       "fields": [
         {
           "type":"TextField",
-          "content": "<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>"
+          "content": "<p>Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>"
         }
       ]
     },
     { "id": 3,
+      "type": "TextBlock",
       "fields": [
         {
           "type":"TextField",
@@ -25,7 +28,12 @@
       ]
     },
     { "id": 4,
+      "type": "ImageBlock",
       "fields": [
+        {
+          "type":"ImageField",
+          "content": "https://cdn.eso.org/images/thumb300y/eso1907a.jpg"
+        },
         {
           "type":"TextField",
           "content": "<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
@@ -33,6 +41,7 @@
       ]
     },
     { "id": 5,
+      "type": "TextBlock",
       "fields": [
         {
           "type":"TextFieldHover",

@@ -1,30 +1,29 @@
 import React from 'react'
-import MyEditor from './MyEditor'
+import { RichEditor } from '../DraftEditor'
 
-import {inject} from "mobx-react";
-@inject('BlocksStore')
 export default class TextField extends React.Component {
 
     render() {
         console.log('render TextField')
         return <div className={'editor-textfield'}>
-            <MyEditor
+            <RichEditor
                 content={this.props.content}
-                onBlur={this.updateStore}
-                onChange={this.updateStore}
+                onBlur={this.updateField}
+                onChange={this.updateField}
             />
         </div>
     }
 
-    updateStore = (html) => {
+    updateField = (newContent) => {
         const {
             blockId,
             fieldIndex,
-            BlocksStore
+            content,
+            updateField
         } = this.props;
 
-        if (this.props.content !== html) {
-            BlocksStore.fieldUpdate( blockId, fieldIndex, html )
+        if (content !== newContent) {
+            updateField( blockId, fieldIndex, newContent )
         }
     }
 

@@ -9,20 +9,28 @@ class BlocksStore {
         this.blocks = json.blocks
     }
 
-    @action fieldUpdate(blockId,fieldIndex,content){
-        const blockIndex = this.findBlockById(blockId);
-        if (blockIndex > -1) {
-            const block = {...this.blocks[blockIndex]}
-            block.fields[fieldIndex].content = content
-            this.blocks[blockIndex] = block
-            //this.blocks.splice(blockIndex,1, block)
-        } else {
-            console.error('Block not found')
+    @action updateField(blockId, fieldIndex, content){
+        const block = this.findBlockById(blockId);
+        if (block) {
+            block.content = content
+            block.lock = true
+        }
+    }
+
+    @action lockBlockById(blockId){
+        const block = this.findBlockById(blockId);
+        if (block) {
+            block.lock = true
         }
     }
 
     findBlockById (blockId) {
-        return this.blocks.findIndex(block => block.id === blockId)
+        const block = this.blocks.find(block => block.id === blockId)
+        if (block) {
+            return block
+        } else {
+            console.error('Block not found')
+        }
     }
 
 }
